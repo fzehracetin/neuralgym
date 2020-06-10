@@ -149,7 +149,7 @@ class DataFromFNames(Dataset):
     def read_img(self, filename):
         img = cv2.imread(filename)
         if img is None:
-            print('image is None, sleep this thread for 0.1s.')
+            print('{}: image is None, sleep this thread for 0.1s.'.format(filename))
             time.sleep(0.1)
             return img, True
         if self.fn_preprocess:
