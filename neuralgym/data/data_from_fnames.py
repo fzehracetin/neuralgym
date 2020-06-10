@@ -71,6 +71,7 @@ class DataFromFNames(Dataset):
         self.random = random
         self.random_crop = random_crop
         self.filetype = filetype
+        print("HELLO WORLD")
         if isinstance(shapes[0], list):
             self.shapes = shapes
         else:
